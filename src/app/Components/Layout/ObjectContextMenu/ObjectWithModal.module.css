@@ -1,0 +1,60 @@
+
+.modal {
+    display: grid;
+    font-size: .7rem;
+    padding: 12px 0;
+
+}
+
+.modal > * {
+    padding: 10px 15px;
+    cursor: pointer;
+    transition: .2s;
+}
+
+.modal > *:hover {
+    color: #3f42ff;
+}
+
+.linkModal {
+    display: grid;
+    width: 300px;
+    margin: auto;
+    margin-top: 3.5rem;
+    gap: 1.2rem;
+}
+
+.linkModal > * > * {
+    transition: .2s;
+}
+
+.linkModal_Header{
+    font-size: 1.25rem;
+}
+
+.absoluteClose {
+    font-size: 1.4rem;
+    transition: .2s;
+    position: absolute;
+    top: .3rem;
+    right: .5rem;
+}
+
+.absoluteClose:hover {
+    color: rgba(15, 19, 238, 0.75);
+}
+
+
+.linkModal_ConfirmButton:hover {
+    background: #0000ec;
+}
+
+.linkModal_DeleteButton {
+    margin-left: 1rem;
+    color: black;
+    background: rgba(222, 222, 222, 0.76);
+}
+
+.linkModal_DeleteButton:hover {
+    background: #dedede;
+}

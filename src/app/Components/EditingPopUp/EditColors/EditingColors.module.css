@@ -1,0 +1,184 @@
+
+.container {
+    position: absolute;
+    top: 2rem;
+    z-index: 100;
+    display: flex;
+    background: white;
+    box-shadow: 0px 0px 5px 3px rgba(50, 50, 56, 0.16);
+    border-radius: .2rem;
+    left: 50%;
+    transform: translateY(-50%) translateX(-50%);
+}
+
+
+.contentBox {
+    position: relative;
+    padding: 1rem;
+    white-space: nowrap;
+
+    border-right: 1px grey solid;
+    display: flex;
+    gap: 1rem;
+}
+
+.end {
+    border: none;
+}
+
+.textEdit {
+    font-style: italic;
+    border-bottom: 2px solid black;
+    font-weight: bold;
+    user-select: none;
+
+}
+
+.caption {
+    position: absolute;
+    font-size: .6rem;
+    left: .8rem;
+    bottom: .8rem;
+}
+
+.popUpContainer {
+    width: 190px;
+    height: 350px;
+    box-shadow: 0px 0px 5px 3px rgba(50, 50, 56, 0.16);
+    position: absolute;
+    top: 3.6rem;
+    left: -1rem;
+    background: white;
+    border-radius: .2rem;
+    overflow: auto;
+    z-index: 100;
+    animation: .1s linear 0s scale;
+}
+
+
+@keyframes scale {
+    from {
+        transform: scale(.8);
+    }
+    to {
+        transform: scale(1);
+    }
+}
+
+
+
+.colorBox {
+    margin: 1rem 1.2rem;
+    display: flex;
+    flex-wrap: wrap;
+    gap: .5rem;
+    height: 40%;
+}
+
+.coloredCircle {
+    width: 25px;
+    user-select: none;
+    height: 25px;
+    border-radius: 50%;
+    border: 1px rgba(128, 128, 128, 0.53) solid;
+}
+
+.transparentCircle {
+    position: relative;
+    font-size: 1.6rem;
+    top: -3px;
+    left: -2px;
+    margin-right: -.2rem;
+    color: rgba(154, 151, 151, 0.53);
+}
+
+.borderedCircle {
+    user-select: none;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    background: white;
+    outline: 3px black solid;
+    outline-offset: -3px;
+}
+
+.selected:after {
+    position: absolute;
+    content: "";
+    width: 31px;
+    height: 31px;
+    border-radius: 50%;
+    top: -3px;
+    left: -3px;
+    border: 1px solid #374579;
+}
+
+
+.opacityContainer {
+    height: 40px;
+    font-size: .8rem;
+    position: relative;
+    color: grey;
+    margin: 1rem;
+
+}
+
+.opacityScroll {
+    transform: scale(1.6);
+    margin: 0 auto;
+    width: 100px;
+    height: 2px;
+    position: relative;
+}
+
+.opacityCaption {
+    user-select: none;
+    position: relative;
+    color: black;
+    font-size: .6rem;
+    top: .8rem;
+    display: flex;
+    justify-content: space-between;
+}
+
+.borderStyles {
+    display: flex;
+    justify-content: space-between;
+    gap: .4rem;
+    /*align-items: center;*/
+    padding: 1.2rem;
+    /*padding-bottom: .7rem;*/
+}
+.spaceForBorder{
+    display: inline-block;
+    width: 33%;
+    height: 20px;
+}
+
+.displayInlineBlock{
+    width: 100%;
+    display: block;
+    height: 3px;
+    margin: 5px;
+}
+
+.border {
+    display: inline-block;
+    width: 2rem;
+}
+
+.dashedWithSoul {
+    background-image: linear-gradient(to right, #000000 33%, rgba(0, 0, 0, 0) 0%);
+    background-position: bottom;
+    background-size: 5px 4px;
+    background-repeat: repeat-x;
+    margin-bottom: 8px;
+}
+
+.colorPicker {
+    z-index: 100;
+    position: absolute;
+    left: 190px;
+    top: 3.6rem;
+
+}

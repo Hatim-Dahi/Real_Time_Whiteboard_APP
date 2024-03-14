@@ -1,0 +1,211 @@
+@import url('https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Josefin+Sans&family=Kanit&family=Oswald&family=Playfair+Display&family=Roboto&family=Roboto+Condensed&family=Roboto+Mono&display=swap');
+
+
+::-webkit-scrollbar {
+    width: 10px;
+}
+
+::-webkit-scrollbar-track {
+    display: none;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #888;
+    border-radius: .2rem;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #555;
+}
+
+
+body {
+    font-family: 'Roboto Mono';
+    margin: 0;
+    max-height: 100vh;
+    max-width: 100vw;
+    overflow: hidden;
+}
+
+canvas {
+    position: absolute;
+    z-index: -1;
+    opacity: 1;
+}
+
+.toolBar {
+    /*position: absolute;*/
+    /*top: 40vh;*/
+    /*left: 1rem;*/
+    border-radius: .4rem;
+    /*width: 2.5rem;*/
+    height: 30vh;
+    background: rgba(255, 255, 255, 0.45);
+    box-shadow: 0px 0px 5px 3px rgba(50, 50, 56, 0.16);
+    min-height: 260px;
+
+}
+
+
+.skewX {
+    transform: skewX(-20deg);
+}
+
+.skew {
+    font-size: 1.7rem;
+    transform: scaleY(.7);
+}
+
+.rect {
+    width: 200px;
+    height: 120px;
+    background: #fcfca5;
+    box-shadow: 2px 2px 5px black;
+
+}
+
+.back {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+
+}
+
+.background {
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    /*inset: 0;*/
+    opacity: .1;
+    background-image: url("/square.jpg");
+    box-shadow: inset 0 0 0 2000px rgba(0, 0, 0, 0.5);
+    /*z-index: -10;*/
+
+}
+
+.wrapper {
+    position: absolute;
+    inset: 0;
+}
+
+
+.lt {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: black;
+    top: -5px;
+    left: -5px;
+    cursor: nwse-resize;
+
+}
+
+input{
+    width: 100%;
+    padding: .3rem .6rem;
+
+}
+button {
+    background: #3f42ff;
+    color: white;
+    font-size: 1rem;
+    padding: .6rem .8rem;
+    border-radius: .3rem;
+    outline: none;
+    border: none;
+}
+
+.rt {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: black;
+    top: -5px;
+    right: -5px;
+    cursor: ne-resize;
+}
+
+.bl {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: black;
+    bottom: -5px;
+    left: -5px;
+    cursor: nesw-resize;
+}
+
+.br {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: black;
+    bottom: -5px;
+    right: -5px;
+    cursor: nwse-resize;
+
+}
+
+.rotate {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    bottom: -20px;
+    left: -20px;
+    cursor: grab;
+}
+
+.top {
+    position: absolute;
+    height: 10px;
+    left: 5px;
+    right: 5px;
+    background: transparent;
+    top: -5px;
+    cursor: n-resize;
+}
+
+.bottom {
+    position: absolute;
+    height: 10px;
+    background: transparent;
+    left: 5px;
+    right: 5px;
+    bottom: -5px;
+    cursor: n-resize;
+}
+
+.left {
+    position: absolute;
+    width: 10px;
+    background: transparent;
+    left: -5px;
+    top: 5px;
+    bottom: 5px;
+    cursor: w-resize;
+}
+
+.right {
+    position: absolute;
+    margin: 10px 0;
+    width: 10px;
+    background: transparent;
+    top: -5px;
+    bottom: -5px;
+    right: -5px;
+    cursor: w-resize;
+}
+
+.text {
+    border: none;
+    outline: none;
+    background: transparent;
+    resize: none;
+    width: 90%;
+    display: inline-block;
+    height: auto;
+    text-align: center;
+    overflow: hidden;
+    /*max-height: 75%;*/
+    /*padding: 1rem;*/
+}

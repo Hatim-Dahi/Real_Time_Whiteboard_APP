@@ -1,0 +1,32 @@
+
+
+.container {
+    cursor: pointer;
+    user-select: none;
+}
+.selected{
+    overflow:hidden;
+    width: 100px;
+    text-overflow: ellipsis;
+    white-space:nowrap;
+}
+
+.arrows{
+    display: inline-block;
+    position: absolute;
+    top: -.5rem;
+    right: -1.5rem;
+}
+
+.option {
+    padding: 1rem;
+}
+
+
+.textDecoration > *{
+    padding: 0 .8rem;
+    font-weight: bold;
+}
+.textDecoration{
+    margin-top: .3rem;
+}

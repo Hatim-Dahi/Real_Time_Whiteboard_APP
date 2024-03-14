@@ -1,0 +1,36 @@
+.CurvesLayer{
+    position: absolute;
+    inset: 0;
+}
+
+.container{
+    position: absolute;
+    background: transparent;
+}
+.selectedContainer{
+    position: absolute;
+    background: transparent;
+    border: 1px solid #3f42ff;
+
+}
+
+.editingCircle{
+    position: absolute;
+    background: white;
+    outline: 2px blue solid;
+    display: block;
+    border-radius: 50%;
+    width: 10px;
+    height: 10px;
+}
+
+.additionalCircle{
+    position: absolute;
+    background: blue;
+    outline: 2px white solid;
+    display: block;
+    border-radius: 50%;
+    width: 8px;
+    height: 8px;
+}
+

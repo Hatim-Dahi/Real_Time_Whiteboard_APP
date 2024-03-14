@@ -1,0 +1,161 @@
+
+.popUp {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-around;
+    padding-left: 1rem;
+    width: 75%;
+}
+
+.popUpPosition {
+    position: absolute;
+    left: 4rem;
+    animation: .1s linear 0s appear;
+    top: -5rem;
+}
+
+.popUp > * {
+    margin: .2rem;
+}
+
+.item * {
+    font-size: 1.5rem;
+    width: 1.5rem;
+    margin: .2rem;
+    padding: .1rem;
+}
+
+.item {
+    transition: .2s ease-in-out;
+    margin: .2rem auto;
+    width: fit-content;
+}
+
+.item:hover {
+    border-radius: .3rem;
+    background: rgba(0, 45, 255, 0.24);
+    color: rgb(65, 65, 255);
+}
+
+.selectedTool {
+    border-radius: .3rem;
+    background: rgba(0, 45, 255, 0.24);
+    color: rgb(65, 65, 255);
+}
+
+@keyframes appear {
+
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+.sideBar{
+    position: absolute;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    /*margin-top: 30%;*/
+    top: calc(40%);
+    left: 1rem;
+    width: calc(2rem + 1vw);
+    height: calc(10rem + 5vh);
+
+}
+
+.caption {
+    position: absolute;
+    left: 2.5rem;
+    border-radius: .3rem;
+    white-space: nowrap;
+    width: fit-content;
+    background: black;
+    font-size: .7rem;
+    padding: .6rem;
+    color: white;
+}
+
+.caption:before {
+    content: "";
+    position: absolute;
+    left: -8px;
+    top: .8rem;
+    width: 0;
+    height: 0;
+    border-top: 5px solid transparent;
+    border-right: 8px solid black;
+    border-bottom: 5px solid transparent;
+
+}
+
+
+.option * {
+    font-size: 1.3rem;
+    margin: .4rem .2rem;
+    padding: .1rem;
+    transition: .1s ease-in-out;
+}
+
+.option {
+    position: relative;
+}
+
+.selected {
+    color: blue;
+}
+
+.option:hover {
+    color: blue;
+}
+
+.horizontalDivider {
+    position: absolute;
+    bottom: -.4rem;
+    width: 90%;
+    border-top: 1px solid rgba(128, 128, 128, 0.67);
+    left: -.2rem;
+}
+
+.colorBorder {
+    width: 1.3rem;
+    height: 1.3rem;
+    background: white;
+    border: 1px black solid;
+    margin: .4rem auto;
+    border-radius: 50%;
+}
+
+.alinedPopUp {
+    position: absolute;
+    top: .4rem;
+    left: 3.8rem;
+}
+
+.colorCircle {
+
+    border-radius: 50%;
+
+}
+
+
+.rhombus {
+    color: inherit;
+    background-image: url("/rhomb.png");
+    background-size: cover;
+    width: 1rem;
+    height: 1rem;
+    display: inline-block;
+}
+
+.bottomSection {
+    /*position: absolute;*/
+    border-radius: .4rem;
+    height: fit-content;
+    background: rgba(255, 255, 255, 0.45);
+    box-shadow: 0px 0px 5px 3px rgba(50, 50, 56, 0.16);
+ }

@@ -1,0 +1,22 @@
+.flexContainer{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: .4rem;
+}
+
+.flexContainer>*{
+    font-size: 1.7rem;
+    margin: .4rem;
+}
+
+.scale{
+    transform: scale(1.5);
+}
+
+
+.main{
+    position: absolute;
+    top: .8rem;
+    font-size: 1.7rem;
+}

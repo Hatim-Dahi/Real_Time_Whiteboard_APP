@@ -1,0 +1,46 @@
+.curveControl {
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background: rgba(151, 152, 241, 0.4);
+    border-radius: 50%;
+    transition: .2s;
+}
+
+.curveControl:hover {
+    transform: scale(1.5);
+}
+
+.top {
+    top: -1.5rem;
+    left: calc(50% - 5px);
+}
+
+.left {
+    top: calc(50% - 5px);
+    left: -1.5rem;
+}
+
+.right {
+    top: calc(50% - 5px);
+    right: -1.5rem;
+}
+
+.bottom {
+    bottom: -1.5rem;
+    left: calc(50% - 5px);
+}
+
+.hoverContainer{
+    transition: background .2s ease-out;
+}
+
+.link{
+    width: 16px;
+    height: 16px;
+    background-size: cover;
+    background-position: center;
+    position: absolute;
+    top: .8rem;
+    right: .8rem;
+}
